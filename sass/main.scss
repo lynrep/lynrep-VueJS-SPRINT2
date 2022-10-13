@@ -1,0 +1,144 @@
+$primary: #5265e1;
+$secondary: #fa5959;
+$info: #516BEB;
+$dark: #2F3A8F;
+
+$nav-link-color: black;
+$nav-link-hover-color: $secondary;
+$nav-tabs-link-active-color: $secondary;
+$nav-tabs-link-active-border-color: $secondary;
+$navbar-light-hover-color: $secondary;
+$navbar-dark-hover-color: $secondary;
+
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $secondary;
+$accordion-icon-active-color: $secondary;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-fluid {
+    padding: 0% 10% 5%;
+
+}
+
+.fa-brands:hover {
+    color: #ff4c68;
+}
+
+.accordion-button:hover {
+    color: #ff4c68;
+}
+
+
+
+/* NAV, Title, Image */
+
+
+.navbar-nav {
+    padding-right: 10%;
+}
+
+.login-button {
+    margin: 3% 1% 4% 0;
+}
+
+
+.title-box {
+    margin-left: 10%;
+    padding-right: 10%;
+}
+
+/* FEATURES */
+
+.art-features {
+    margin-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+/* DOWNLOAD/CARDS*/
+
+
+.card {
+    margin: 2rem;
+}
+
+.download-logo {
+    width: 65%;
+    height: auto;
+    align-self: center;
+    padding: 2rem;
+}
+
+.card-text {
+    border: none;
+    border-bottom: dotted 5px #CCD1E4;
+    padding-bottom: 35px;
+    width: 100%;
+}
+
+
+
+/* CTA */
+
+.cta {
+    margin-top: 25px;
+}
+
+
+
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+@include media-breakpoint-down(lg) {
+
+    .title-heading,
+    .feature-title {
+        order: 2;
+    }
+
+    .title-img,
+    .feature-img {
+        order: 1;
+    }
+}
+
+
+.features {
+    @include media-breakpoint-down (md) {
+        width: 50%;
+    }
+}
+
+#tab-content {
+    @include media-breakpoint-down(sm) {
+        &>ul {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.card:nth-child(2) {
+    @include media-breakpoint-up(md) {
+        position: relative;
+        top: 3rem;
+    }
+}
+
+.card:nth-child(3) {
+    @include media-breakpoint-up(md) {
+        position: relative;
+        top: 6rem;
+    }
+
+
+}
